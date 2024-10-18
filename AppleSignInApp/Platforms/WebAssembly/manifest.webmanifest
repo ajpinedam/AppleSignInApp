@@ -1,0 +1,10 @@
+{
+  "background_color": "#ffffff",
+  "description": "AppleSignInApp",
+  "display": "standalone",
+  "name": "AppleSignInApp",
+  "short_name": "AppleSignInApp",
+  "start_url": "/index.html",
+  "theme_color": "#ffffff",
+  "scope": "/"
+}

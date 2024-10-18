@@ -1,0 +1,45 @@
+<Project Sdk="Uno.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net8.0-android;net8.0-ios;net8.0-browserwasm;net8.0-desktop</TargetFrameworks>
+
+    <OutputType>Exe</OutputType>
+    <UnoSingleProject>true</UnoSingleProject>
+
+    <!-- Display name -->
+    <ApplicationTitle>AppleSignInApp</ApplicationTitle>
+    <!-- App Identifier -->
+    <ApplicationId>com.pinedax.WebWorkerNative</ApplicationId>
+    <!-- Versions -->
+    <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+    <ApplicationVersion>1</ApplicationVersion>
+    <!-- Package Publisher -->
+    <ApplicationPublisher>AppleSignInApp</ApplicationPublisher>
+    <!-- Package Description -->
+    <Description>AppleSignInApp powered by Uno Platform.</Description>
+
+    <!--
+      UnoFeatures let's you quickly add and manage implicit package references based on the features you want to use.
+      https://aka.platform.uno/singleproject-features
+    -->
+    <UnoFeatures>
+      Material;
+      Dsp;
+      Hosting;
+      Toolkit;
+      Logging;
+      MauiEmbedding;
+      MVUX;
+      Configuration;
+      Http;
+      Serialization;
+      Localization;
+      Navigation;
+      ThemeService;
+    </UnoFeatures>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AppleSignInApp.MauiControls\AppleSignInApp.MauiControls.csproj" />
+  </ItemGroup>
+
+</Project>
